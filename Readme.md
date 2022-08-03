@@ -7,7 +7,7 @@
 
 
 
-## Project 14 [Live Link]()
+## Project 14 [Live Link](https://fullstack-js-project-14.netlify.app/)
 
 - >  Skills Gained in this project
     -   Learned to use psedue-class
