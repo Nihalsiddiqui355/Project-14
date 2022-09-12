@@ -90,8 +90,8 @@ div img[src="./Image/Logo.png"] {
     }
 
     img[src="./Image/pexels-rfstudio-3819572.jpg"] {
-        max-width: 400px;
-        height: 100%;
+        max-width: 700px;
+        height: 113%;
         z-index: -1;
         position: absolute;
         top: 0;
