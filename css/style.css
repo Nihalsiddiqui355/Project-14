@@ -5,18 +5,20 @@
 * {
     margin: 0%;
     padding: 0%;
-
 }
 
 
 
 
 .container {
+    box-sizing: border-box;
     max-width: 1216px;
     margin: 0 auto;
     overflow: hidden;
-   
+
 }
+
+/* NavBAr here++++++++++++++++++++++++++++++++++++ */
 
 .container .navbar {
     margin: 45px;
@@ -58,6 +60,205 @@ div img[src="./Image/Logo.png"] {
     color: #000;
 }
 
+
+@media only screen and (min-width:364px) and (max-width:864px) {
+   
+    .container{
+        overflow: hidden;
+    }
+    .fa-solid.fa-bars{
+        position: relative;
+        font-size: 20px;
+        right: -120px;
+        top: -40px;
+    }
+
+    .container .navbar .line {
+     display: none;
+     
+    }
+    .container .navbar .list-item {
+        display: none;
+    }
+
+    img[src="./Image/pexels-rfstudio-3819572.jpg"] {
+        max-width: 400px;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        opacity: 0.6;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .top {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 45%;
+        max-width:850px ;
+        margin: 0 auto;
+    }
+    .top .mid{
+        max-width: 80%;
+      
+    }
+    .top .mid h1 {
+        font-family: "Merriweather";
+        font-size: 100px;
+    }
+    .top .mid>h1 {
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        display: inline-block;
+    }
+    .mid>h1::after {
+        content: "";
+        width: 35px;
+        height: 12px;
+        display: inline-block;
+        border: 2px solid #4a4040;
+       margin: auto 0;
+    }
+    
+.mid>div>p {
+    font-size: 4rem;
+    font-weight: normal;
+    color: #ffffff;
+    position: relative;
+    top: 150px;
+    line-height: 50px;
+    left: -145px;
+}
+.social-icons {
+    /* margin: 0 auto; */
+    position: relative;
+    left: -26px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+.social-icons img:nth-child(1) {
+   
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px 30px;
+    padding: 5px;
+}
+.social-icons img:nth-child(2) {
+   
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px 30px;
+    padding: 5px;
+}
+
+.social-icons img:nth-child(3) {
+    width: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px 46px;
+    padding: 5px;
+}
+
+.social-icons img:nth-child(4) {
+    width: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px 30px;
+    padding: 5px;
+}
+
+.right-3 {
+    /* display: inline-block; */
+    position: relative;
+    right: 25rem;
+    top: 24rem;
+    height: fit-content;
+    padding: 5px;
+    
+}
+
+
+.right-3 button {
+    background-color: #333333;
+    padding: 0px;
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+  
+}
+
+@media only screen and (min-width:865px) {
+    img[src="./Image/pexels-rfstudio-3819572.jpg"] {
+        height: 700px;
+        width: 450px;
+        z-index: -1;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .right-3 {
+        /* display: inline-block; */
+        position: relative;
+        top: 210px;
+    }
+    .right-3 button {
+        background-color: #333333;
+        color: #FFFFFF;
+        padding: 17px 50px;
+        border: none;
+        font-size: 18px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+    .top {
+        height: 300px;
+        display: flex;
+        position: relative;
+        left: 400px;
+
+    }
+    .top .mid h1 {
+        font-family: "Merriweather";
+        font-size: 100px;
+    }
+    .top .mid>h1 {
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+    .mid>h1::after {
+        content: "";
+        width: 50px;
+        height: 12px;
+        display: inline-block;
+        border: 2px solid #898888;
+        margin-bottom: 25px;
+    }
+    
+.mid>div>p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 30px;
+    color: #898888;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.social-icons {
+    position: relative;
+    right: -245px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+}
+
+/* Big Screen size */
+
 /* Section imag */
 
 .left-1 {
@@ -65,42 +266,18 @@ div img[src="./Image/Logo.png"] {
     gap: 40px;
 }
 
-img[src="./Image/pexels-rfstudio-3819572.jpg"] {
-    height: 700px;
-    width: 450px;
-    z-index: -1;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
+
 
 .top {
-    height: 300px;
+
     display: flex;
-    position: relative;
-    left: 400px;
 }
 
 .top .mid h1 {
     font-family: "Merriweather";
-    font-size: 100px;
-}
-
-.top .mid>h1 {
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
 }
 
 
-.mid>h1::after {
-    content: "";
-    width: 50px;
-    height: 12px;
-    display: inline-block;
-    border: 2px solid #898888;
-    margin-bottom: 25px;
-}
 
 .mid div {
     margin-left: 110px;
@@ -110,54 +287,30 @@ img[src="./Image/pexels-rfstudio-3819572.jpg"] {
     align-items: center;
 }
 
-.mid>div>p {
 
-    font-size: 1.5rem;
-    font-weight: normal;
-    line-height: 30px;
-    color: #898888;
-    padding-left: 40px;
-    padding-top: 30px;
-}
 
-.social-icons {
-    position: relative;
-    right: -245px;
-    display: flex;
-    gap: 40px;
-    flex-direction: column;
-}
+
 .social-icons img {
     width: 20px;
 }
+
 .social-icons img:nth-child(2) {
     width: 16px;
 }
+
 .social-icons img:nth-child(3) {
     width: 12px;
 }
+
 .social-icons img:nth-child(4) {
     width: 16px;
 }
 
 
 
-.right-3{
-    /* display: inline-block; */
-    position: relative;
-    top: 210px;
-}
 
 
-.right-3 button {
-    background-color: #333333;
-    color: #FFFFFF;
-    padding: 17px 50px;
-    border: none;
-    font-size: 18px;
-    font-weight: normal;
-    cursor: pointer;
-}
+
 
 /* _________Bottom */
 
@@ -167,12 +320,14 @@ img[src="./Image/pexels-rfstudio-3819572.jpg"] {
     top: 450px;
     left: 475px;
 }
+
 .bottom ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
 }
+
 .bottom ul li {
     font-size: 1rem;
     list-style-type: none;
@@ -180,60 +335,109 @@ img[src="./Image/pexels-rfstudio-3819572.jpg"] {
     display: flex;
     align-items: center;
 }
+
 .bottom ul li:not(:last-child) {
     padding-bottom: 28px;
 }
+
 .bottom ul li span {
     background-color: #868686;
     width: 15px;
+    
     height: 15px;
     border-radius: 50px;
     display: inline-block;
     vertical-align: center;
     margin-right: 20px;
 }
+
 .active-item .dot {
     background-color: #333333;
 }
+
 .active-item p {
+    
     color: #333333;
 }
+
 .bottom .line-dot {
+  
     height: 120%;
     width: 1.55px;
     background-color: #868686;
     position: absolute;
     left: 7px;
     top: 20px;
+    margin: 0 auto;
 }
 
 .bottom-quote {
     position: absolute;
     left: 270px;
     top: 0px;
+ 
+    margin: 0 auto;
 }
+
 .bottom-quote p {
     font-size: 16px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
 .img {
     width: 400px;
     object-fit: cover;
     object-position: 100% 10%;
 }
-.img > img {
+
+.img>img {
     width: 100%;
 }
+
 .quote-icon .fa-quote-right {
     color: #333333;
     font-size: 40px;
 }
+
 .arrow {
     position: absolute;
     top: 120px;
     right: -140px;
 }
-.arrow > img {
+
+.arrow>img {
     width: 30px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:864px) {
+
+    .bottom {
+        /* margin: 0 auto; */
+        /* width: fit-content; */
+        position: absolute;
+        top:60rem;
+        left: 30px;
+        margin: 0 auto;
+        width: 300px
+    }
+    .arrow{
+        display: none;
+    }
+    .img {
+        width: 300px;
+        object-fit: cover;
+        object-position: 100% 10%;
+        margin: 0 auto;
+    }
+    
+    .img>img {
+        width: 100%;
+    }
+    .bottom-quote {
+        position: absolute;
+        left: 0px;
+        top: 18rem;
+    }
 }
